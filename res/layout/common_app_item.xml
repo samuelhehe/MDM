@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/list_item_height"
+    android:background="@drawable/common_bg" >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="@dimen/icon_size"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/common_padding"
+        android:src="@drawable/app" />
+    <!-- <ImageSwitcher -->
+    <!-- android:id="@+id/icon" -->
+    <!-- android:layout_width="@dimen/icon_size" -->
+    <!-- android:layout_height="@dimen/icon_size" -->
+    <!-- android:layout_alignParentLeft="true" -->
+    <!-- android:layout_centerVertical="true" -->
+
+
+    <!-- android:layout_marginRight="@dimen/common_padding" /> -->
+
+<!--     <Button -->
+<!--         android:id="@+id/action" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_alignParentRight="true" -->
+<!--         android:layout_centerVertical="true" -->
+<!--         android:layout_marginLeft="@dimen/common_padding" -->
+<!--         android:focusable="false" -->
+<!--         android:gravity="center" -->
+<!--         android:text="download" /> -->
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/action"
+        android:layout_toRightOf="@+id/icon"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="数据:"
+        android:textAppearance="@style/TextAppearance.Secondary" />
+
+    <TextView
+        android:id="@+id/developer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/name"
+        android:layout_toLeftOf="@+id/action"
+        android:layout_toRightOf="@+id/icon"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="QQ"
+        android:textAppearance="@style/TextAppearance.Primary" />
+
+    <TextView
+        android:id="@+id/ratingbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_toRightOf="@+id/icon"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textAppearance="@style/TextAppearance.Secondary"
+        android:text="WLAN:" />
+
+</RelativeLayout>

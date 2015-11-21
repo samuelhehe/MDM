@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/background_light"
+    android:gravity="center_horizontal" >
+
+    <TextView
+        android:id="@+id/sys_license_dialog_title_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0.0dip"
+        android:background="@android:color/holo_blue_light"
+        android:gravity="center_horizontal"
+        android:padding="10.0dip"
+        android:text="@string/sys_license_dialogtitle_tv_hint"
+        android:textColor="@android:color/white"
+        android:textSize="18.0sp" />
+
+    <TextView
+        android:id="@+id/sys_license_dialog_msg_content_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sys_license_dialog_title_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0.0dip"
+        android:background="@android:color/white"
+        android:gravity="left"
+        android:padding="10.0dip"
+        android:text="@string/sys_license_dialog_msg_content_tv_hint"
+        android:textColor="@android:color/background_dark"
+        android:textSize="16.0sp" />
+
+    <EditText
+        android:id="@+id/sys_license_dialog_enterprisename_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sys_license_dialog_msg_content_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginRight="15.0dip"
+        android:layout_marginTop="10.0dip"
+        android:cursorVisible="true"
+        android:drawableLeft="@drawable/sys_license_enterprisename_icon"
+        android:drawablePadding="10.0dip"
+        android:gravity="left|center"
+        android:hint="@string/sys_license_please_input_enterprisename_hint_et"
+        android:imeOptions="actionNext"
+        android:padding="8.0dip"
+        android:paddingLeft="15.0dip"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/text_hint_color"
+        android:textCursorDrawable="@null"
+        android:textSize="14.0dip" />
+
+    <ImageView
+        android:id="@+id/sys_license_button_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/sys_license_dialog_enterprisename_tv"
+        android:layout_alignTop="@+id/sys_license_dialog_enterprisename_tv"
+        android:layout_margin="13.0dip"
+        android:src="@drawable/button_clear"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/sys_license_dialog_licenseno_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sys_license_dialog_enterprisename_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginRight="15.0dip"
+        android:background="@android:color/background_light"
+        android:cursorVisible="true"
+        android:drawableLeft="@drawable/sys_license_key_icon"
+        android:drawablePadding="10.0dip"
+        android:gravity="left|center"
+        android:hint="@string/sys_licnese_please_input_licneseno_hint_et"
+        android:imeOptions="actionDone"
+        android:padding="8.0dip"
+        android:paddingLeft="15.0dip"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/text_hint_color"
+        android:textCursorDrawable="@null"
+        android:textSize="14.0dip" />
+
+    <ImageView
+        android:id="@+id/sys_license_key_button_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/sys_license_dialog_licenseno_tv"
+        android:layout_alignTop="@+id/sys_license_dialog_licenseno_tv"
+        android:layout_margin="13.0dip"
+        android:src="@drawable/button_clear"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/sys_license_dialog_varlidate_showresult_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sys_license_dialog_licenseno_tv"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="0.0dip"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/sys_license_dialog_varlidate_showdeadline_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0.0dip"
+            android:layout_toRightOf="@+id/sys_license_dialog_varlidate_btn_left_iv"
+            android:gravity="center_horizontal|left"
+            android:singleLine="true"
+            android:text="@string/sys_license_dialog_validate_showdeadline_warning_hint"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="15.0sp" />
+
+        <ImageView
+            android:id="@+id/sys_license_dialog_varlidate_btn_left_iv"
+            android:layout_width="15.0dip"
+            android:layout_height="55.0dip"
+            android:layout_alignBottom="@+id/sys_license_dialog_varlidate_showdeadline_tv"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15.0dip"
+            android:src="@drawable/sys_license_validate_btn_left_warning" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/sys_license_dialog_validate_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/sys_license_dialog_varlidate_showresult_rl"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/sys_license_dialog_validate_btn_rl"
+            android:layout_width="0dip" 
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/sys_license_dialog_varlidate_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="20.0dip"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginRight="15.0dip"
+                android:layout_marginTop="0dip"
+                android:background="@drawable/button_varlidate_seletor_bg"
+                android:gravity="center_horizontal"
+                android:padding="15.0dip"
+                android:text="@string/sys_license_dialog_validate_revalidate_btn_hint"
+                android:textColor="@android:color/white"
+                android:textSize="16.0sp" />
+
+            <ProgressBar
+                android:id="@+id/sys_license_dialog_varlidate_btn_right_pb"
+                android:layout_width="16.0dip"
+                android:layout_height="16.0dip"
+                android:layout_alignRight="@+id/sys_license_dialog_varlidate_btn"
+                android:layout_alignTop="@+id/sys_license_dialog_varlidate_btn"
+                android:layout_marginRight="15.0dip"
+                android:layout_marginTop="15.0dip"
+                android:indeterminate="true"
+                android:indeterminateBehavior="repeat"
+                android:indeterminateDrawable="@drawable/common_loading3"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/sys_license_dialog_varlidate_close_btn"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20.0dip"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginRight="20.0dip"
+            android:layout_marginTop="0dip"
+            android:layout_weight="1"
+            android:background="@drawable/button_validate_close_seletor_bg"
+            android:gravity="center_horizontal"
+            android:padding="15.0dip"
+            android:text="@string/sys_license_dialog_validate_close_confirmexit_hint"
+            android:textColor="@android:color/white"
+            android:textSize="16.0sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.100000024dip"
+        android:layout_below="@+id/sys_license_dialog_validate_rl"
+       	android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/background_light" />
+
+</RelativeLayout>

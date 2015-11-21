@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/white" >
+
+    <TextView
+        android:id="@+id/et_app_lock_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_app_lock_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="@string/forbidden_warning_hint"
+        android:textColor="@color/ems_black"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:id="@+id/emm_forbidden_limitcontent_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_app_lock_pwd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:visibility="visible" >
+
+        <View
+            android:id="@+id/emm_forbidden_limitcontent_div"
+            android:layout_width="1px"
+            android:layout_height="1px"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@color/red"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/emm_forbidden_limitcontent_type_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/emm_forbidden_limitcontent_div"
+            android:text="限制类别:"
+            android:textColor="@android:color/holo_orange_light"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/emm_forbidden_limitcontent_type_pwd_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/emm_forbidden_limitcontent_type_tv"
+            android:layout_below="@+id/emm_forbidden_limitcontent_type_tv"
+            android:layout_marginTop="20dp"
+            android:text=""
+            
+            android:textColor="@android:color/holo_orange_light"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/emm_forbidden_limitcontent_type_pwd_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/emm_forbidden_limitcontent_type_pwd_time_tv"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="0dp"
+            android:layout_toRightOf="@+id/emm_forbidden_limitcontent_type_pwd_time_tv"
+            android:background="@null"
+            android:cursorVisible="true"
+            android:drawableLeft="@drawable/user_center_pwd_icon"
+            android:drawablePadding="10.0dip"
+            android:hint="请输入应用限制密码"
+            android:paddingBottom="12.0dip"
+            android:paddingRight="30.0dip"
+            android:paddingTop="12.0dip"
+            android:password="true"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/text_hint_color"
+            android:textCursorDrawable="@null"
+            android:textSize="15sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/emm_forbidden_limitcontent_type_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/emm_forbidden_limitcontent_type_pwd_time_tv"
+            android:layout_below="@+id/emm_forbidden_limitcontent_type_pwd_time_tv"
+            android:layout_marginTop="20dp"
+            android:text="结束时间:"
+            android:textColor="@android:color/holo_orange_light"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/forbidden_confirm_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emm_forbidden_limitcontent_rl"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_warning"
+        android:text="@string/forbidden_confirm_btn_hint"
+        android:textColor="@color/webapp_white"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/iv_app_lock_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/forbidden_confirm_btn"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="22dp"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tv_app_lock_pwd_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_app_lock_icon"
+        android:layout_marginBottom="18dp"
+        android:layout_toRightOf="@+id/iv_app_lock_icon"
+        android:text="@string/forbidden_app_name_hint"
+        android:textColor="@color/ems_black"
+        android:textSize="16sp" />
+
+</RelativeLayout>

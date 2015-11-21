@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light" >
+
+    <include
+        android:id="@+id/welcome_content_iconlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        layout="@layout/welcome_content_iconlayout" />
+
+    <TextView
+        android:id="@+id/welcome_content_subject_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome_content_iconlay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:text="@string/emm_license_welcome_pager1_title"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/welcome_content_subject_detail_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@+id/welcome_content_subject_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:singleLine="false"
+        android:text="@string/emm_license_welcome_pager1_content"
+        android:textColor="@android:color/background_dark"
+        android:textSize="15sp" />
+
+</RelativeLayout>

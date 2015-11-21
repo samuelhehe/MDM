@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_content_bg_middle_n" >
+
+    <TextView
+        android:id="@+id/sys_seting_device_serial_no_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/base_content_title_bg"
+        android:hint="@string/sys_seting_device_serial_no_tv_hint"
+        android:paddingLeft="20dp"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/sys_seting_device_serialno_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/sys_seting_device_serial_no_tv"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:text="@string/sys_seting_device_serialno_title_tv_hint"
+        android:textColor="@color/webapp_black"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/sys_seting_device_sercurity_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/sys_seting_device_serialno_title_tv"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/base_content_title_bg"
+        android:hint="@string/sys_seting_device_sercurity_tv_hint"
+        android:paddingLeft="20dp"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/sys_seting_device_safe_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/sys_seting_device_sercurity_tv"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="@string/sys_seting_device_safe_title_tv_hint"
+        android:textColor="@color/webapp_black"
+        android:textSize="28sp" />
+
+    <Button
+        android:id="@+id/sys_delete_device_serialno_content_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/sys_seting_device_serialno_content_btn"
+        android:layout_alignBottom="@+id/sys_seting_device_serialno_content_btn"
+        android:layout_alignRight="@+id/sys_seting_device_serial_no_tv"
+        android:background="@drawable/button_green_enhance"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/sys_delete_device_serialno_content_btn_hint"
+        android:textColor="@color/ems_white"
+        android:textSize="24sp" />
+
+    <com.ab.view.sliding.AbSlidingButton
+        android:id="@+id/sys_seting_device_safe_content_tbtn"
+        android:layout_width="54dip"
+        android:layout_height="19dip"
+        android:layout_alignLeft="@+id/sys_seting_device_serialno_content_btn"
+        android:layout_below="@+id/sys_seting_device_sercurity_tv"
+        android:layout_marginTop="60dp"
+        android:layout_toRightOf="@+id/sys_seting_device_safe_title_tv" >
+    </com.ab.view.sliding.AbSlidingButton>
+
+    <TextView
+        android:id="@+id/sys_seting_aboutus_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sys_seting_device_safe_title_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/base_content_title_bg"
+        android:hint="@string/sys_seting_aboutus_tv_hint"
+        android:paddingLeft="20dp"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/sys_seting_abouts_more_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/sys_seting_aboutus_tv"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="@string/sys_seting_abouts_more_tv_hint"
+        android:textColor="@color/webapp_black"
+        android:textSize="28sp" />
+
+    <Button
+        android:id="@+id/sys_seting_aboutus_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sys_seting_device_serialno_content_btn"
+        android:layout_alignRight="@+id/sys_seting_device_serialno_content_btn"
+        android:layout_below="@+id/sys_seting_aboutus_tv"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/button_green_enhance"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/sys_seting_aboutus_bt_hint"
+        android:textColor="@color/ems_white"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/sys_seting_device_serialno_content_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sys_seting_device_serialno_title_tv"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="23dp"
+        android:layout_toLeftOf="@+id/sys_delete_device_serialno_content_btn"
+        android:background="@drawable/button_green_enhance"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/sys_seting_device_serialno_content_btn_hint"
+        android:textColor="@color/ems_white"
+        android:textSize="24sp" />
+
+</RelativeLayout>

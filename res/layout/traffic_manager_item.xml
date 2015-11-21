@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="65dip"
+    android:background="@drawable/item_background_selector">
+    
+    <ImageView 
+        android:id="@+id/iv_traffic_icon"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_alignParentLeft="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/app"
+        />
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="65dip"
+	    android:layout_marginLeft="10dip"
+	    android:layout_toRightOf="@id/iv_traffic_icon"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+        
+	    <TextView 
+	        android:id="@+id/tv_traffic_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="hello_world"
+	        android:textSize="15sp"
+	        android:textColor="#ff000000"/>
+        
+    </LinearLayout>
+    
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="65dip"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dip"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+        
+        <TextView 
+            android:id="@+id/tv_traffic_transmitted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/traffic"
+            android:drawableLeft="@drawable/upload"
+            android:drawablePadding="3dip"/>
+        
+        <TextView 
+            android:id="@+id/tv_traffic_received"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:text="@string/traffic"
+            android:drawableLeft="@drawable/download"
+            android:drawablePadding="3dip"/>
+        
+    </LinearLayout>
+    
+</RelativeLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/ems_blue_shadow" >
+
+    <RelativeLayout
+        android:id="@+id/sys_takephoto_main_title_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/sys_takephoto_main_action_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/sys_takephoto_main_cut_btn"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_green"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="裁剪"
+                android:textColor="@color/ems_white"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/sys_takephoto_main_rotate_btn"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_white"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="旋转"
+                android:textColor="@color/ems_black"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/sys_takephoto_main_turn_btn"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_green"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="翻转"
+                android:textColor="@color/ems_white"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/sys_takephoto_main_retake_btn"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_white"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="重拍"
+                android:textColor="@color/ems_black"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sys_takephoto_main_pic_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sys_takephoto_main_title_rl"
+        android:layout_marginTop="35dp"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/sys_takephoto_main_pic_iv"
+            android:layout_width="384dp"
+            android:layout_height="512dp"
+            android:layout_alignParentTop="true"
+            android:layout_margin="20dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/user_default_photo" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/sys_takephoto_main_info_tv"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sys_takephoto_main_pic_rl"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:gravity="center_horizontal"
+        android:text="该照片用于身份识别,请适当的处理,取上身免冠2寸照为宜"
+        android:textColor="@color/ems_white" />
+
+    <Button
+        android:id="@+id/sys_takephoto_main_confirm_btn"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sys_takephoto_main_info_tv"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_base_rename"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="确定"
+        android:textColor="@color/ems_white"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2.0dip"
+        android:layout_above="@+id/sys_takephoto_main_pic_rl"
+        android:layout_alignParentLeft="true"
+        android:background="@color/ems_white" />
+
+</RelativeLayout>

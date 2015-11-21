@@ -1,0 +1,109 @@
+
+
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-verbose
+
+-dontoptimize
+-dontpreverify
+
+
+-libraryjars libs/baidumapapi_v3_0_0.jar 
+-libraryjars libs/android-support-v4.jar
+-libraryjars libs/gson-1.7.1.jar
+-libraryjars libs/locSDK_4.0.jar
+-libraryjars libs/nineoldandroids-library-2.4.0.jar
+-libraryjars libs/zxing.jar
+-libraryjars libs/armeabi/libBaiduMapSDK_v3_0_0.so
+-libraryjars libs/armeabi/liblocSDK4.so
+-libraryjars libs/armeabi-v7a/libmupdf.so
+
+
+-keep class com.baidu.** { *; } 
+-keep class vi.com.gdi.bgl.android.** { *; }
+-keep class com.artifex.mupdfdemo.* { *; }
+-keep class com.google.gson.** { *; }
+-keep class com.nineoldandroids.** { *; }
+-keep class com.ab.** { *;}
+-keep class com.google.zxing.** { *; }
+-keep class com.charon.pulltorefreshlistview.** { *; }
+-keep class com.novell.sasl.client.** { *; }
+-keep class de.measite.smack.** { *; }
+-keep class org.apache.** { *; }
+-keep class org.jivesoftware.smack.** { *; }
+-keep class org.xbill.DNS.** { *; }
+-keep class android.support.v4.** { *; }
+-keepattributes Signature  
+
+-keep class com.foxconn.lib.** { *; }
+-keep class com.foxconn.emm.view.* { *; }
+-keep class com.foxconn.emm.bean.* { *; }
+
+
+
+-keep public class * extends android.app.Activity
+-keep public class * extends android.app.Fragment  
+-keep public class * extends android.app.Application {*;}
+-keep public class * extends android.app.Service
+-keep public class * extends android.content.BroadcastReceiver
+-keep public class * extends android.content.ContentProvider
+-keep public class * extends android.app.backup.BackupAgentHelper
+-keep public class * extends android.preference.Preference
+-keep public class * extends android.support.v4.**
+-keep public class * extends android.view.View {*;}
+-keep public class * extends android.widget.Adapter {*;}
+-keepnames class * implements java.io.Serializable
+
+
+-dontwarn com.baidu.**
+-dontwarn com.baidu.mapapi.**
+-dontwarn com.google.zxing.**
+-dontwarn android.support.**
+
+-keepattributes *Annotation*
+-keep public class com.google.vending.licensing.ILicensingService
+-keep public class com.android.vending.licensing.ILicensingService
+
+
+-keepclassmembers class * implements java.io.Serializable { *;}
+
+-keepclasseswithmembernames class * {
+    native <methods>;
+}
+
+-keepclassmembers public class * extends android.view.View {
+   void set*(***);
+   *** get*();
+}
+
+-keepclassmembers class * extends android.app.Service {
+   public void *(***);
+}
+
+-keepclassmembers class * extends com.foxconn.emm.service.BaseService {
+	*;
+}
+
+-keepclassmembers class * extends com.ab.activity.AbActivity {
+	*;
+}
+
+
+
+-keepclassmembers  class * extends android.app.Application {
+   public void *(***);
+}
+
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+-keep class * implements android.os.Parcelable {
+  public static final android.os.Parcelable$Creator *;
+}
+
+-keepclassmembers class **.R$* {
+    public static <fields>;
+}
+

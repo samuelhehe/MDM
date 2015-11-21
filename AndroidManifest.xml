@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.foxconn.app"
+    android:versionCode="20"
+    android:versionName="@string/sys_version_name" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="16" />
+
+    <permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <!-- <uses-permission android:name="android.permission.WRITE_APN_SETTINGS"></uses-permission> -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- SDK1.5需要android.permission.GET_TASKS权限判断本程序是否为当前运行的应用? -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <!-- create shortcut permission -->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+
+    <!-- mam permission start -->
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <!-- mam permission end -->
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+
+    <!-- 来电消音 -->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="false"
+        android:xlargeScreens="false" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name="com.foxconn.app.App"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo.NoActionBar" >
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="684FDF5D02837469452AEB4CF3BE66A7DF5DF483" />
+        <!-- android:value="ZhQnusCDa0od16HXWGXzP7wW" -->
+        <activity
+            android:name="com.foxconn.app.aty.AtyWelcome"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.foxconn.lib.welcome.license.AtyFirstLoadWelcomePage"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="com.foxconn.app.aty.AtyMain"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.foxconn.app.aty.CaptureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="com.foxconn.app.aty.ResultActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="com.foxconn.app.aty.AtyEnroll"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.foxconn.app.aty.AtyInfoCenter"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="com.foxconn.app.aty.AtyDLQueue"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="com.foxconn.app.aty.AtyAppLimitMgr"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="com.foxconn.app.aty.AtySafePolicy"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="com.foxconn.app.aty.AtySettings"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="com.foxconn.app.aty.AtyTrafficMgr"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="com.foxconn.app.aty.AtyTrafficApps"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="com.foxconn.app.aty.AtyTrafficMgrInfo"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="com.foxconn.app.aty.AtyUpdate"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/myDialogTheme" >
+        </activity>
+        <activity
+            android:name="com.foxconn.app.aty.AtyUserInfo"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="com.foxconn.app.aty.AtyUserInfoDetails"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="com.foxconn.app.aty.AtyLimitApps"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="com.foxconn.app.aty.ShowWebpage"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <!-- take photo -->
+        <activity
+            android:name="com.foxconn.app.aty.AtyMainCamera"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="com.foxconn.app.aty.AtyTempPhoto"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="com.foxconn.lib.cropimage.CropImage"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+
+        <!-- About us -->
+        <activity
+            android:name="com.foxconn.app.aty.AtyAbout"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="com.foxconn.app.aty.AtyAboutus"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="com.foxconn.app.aty.AtySpecification"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+
+        <!-- Lock pattern -->
+        <activity
+            android:name="com.foxconn.emm.lock.CreateGesturePasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="com.foxconn.emm.lock.GuideGesturePasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name="com.foxconn.emm.lock.UnlockGesturePasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <!-- pdf , img -->
+
+        <activity
+            android:name="com.artifex.mupdfdemo.MuPDFActivity"
+            android:label="@string/app_name"
+            android:theme="@style/ThemeActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="application/vnd.ms-xpsdocument" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="application/pdf" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="application/x-cbz" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="file" />
+                <data android:mimeType="*/*" />
+                <data android:pathPattern=".*\\.xps" />
+                <data android:host="*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="file" />
+                <data android:mimeType="*/*" />
+                <data android:pathPattern=".*\\.pdf" />
+                <data android:host="*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="file" />
+                <data android:mimeType="*/*" />
+                <data android:pathPattern=".*\\.cbz" />
+                <data android:host="*" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.artifex.mupdfdemo.OutlineActivity"
+            android:label="@string/outline_title"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.artifex.mupdfdemo.PrintDialogActivity"
+            android:label="@string/print"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.foxconn.app.aty.BarChartSingleActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+
+        <receiver android:name="com.foxconn.emm.receiver.BootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.media.RINGER_MODE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- pdf , img -->
+
+
+        <!-- receiver -->
+
+        <receiver
+            android:name="com.foxconn.emm.receiver.DeviceAdminSampleReceiver"
+            android:description="@string/sample_device_admin_description"
+            android:label="@string/sample_device_admin"
+            android:permission="android.permission.BIND_DEVICE_ADMIN" >
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/device_admin_sample" />
+
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.foxconn.emm.receiver.EMMBroadcastReceiver" >
+            <intent-filter>
+
+                <!-- 开机广播 -->
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <!-- 关机广播 -->
+                <action android:name="android.intent.action.ACTION_SHUTDOWN" />
+                <!-- 网络连接变化的广播 -->
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <!-- 删除动作 -->
+                <action android:name="android.intent.action.DELETE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.foxconn.emm.receiver.LockScreenReceiver" >
+            <intent-filter android:priority="1000" >
+                <action android:name="android.intent.action.SCREEN_OFF" />
+                <!-- 屏幕锁后的广播 -->
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.foxconn.emm.receiver.WifiStateReceiver" >
+            <intent-filter>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.foxconn.emm.receiver.BTStatusReceiver" >
+            <intent-filter>
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.foxconn.emm.provider.AppForbiddenProvider"
+            android:authorities="com.foxconn.emm.unlockprovider" >
+        </provider>
+        <!-- Service -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+        <service
+            android:name="com.foxconn.emm.service.EMMService"
+            android:enabled="true" >
+        </service>
+        <service android:name="com.foxconn.emm.service.EMMIntentService" >
+        </service>
+        <service
+            android:name="com.foxconn.emm.service.EMMMonitorService"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="com.foxconn.emm.service.EMMMonitorService" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.foxconn.emm.xmpp.NotificationService"
+            android:enabled="true"
+            android:label="NotificationService" >
+            <intent-filter>
+                <action android:name="com.foxconn.emm.xmpp.NotificationService" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

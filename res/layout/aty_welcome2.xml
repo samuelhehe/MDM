@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/splash_mixed_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/copy_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="12dip"
+        android:text="@string/copyright_2014_foxconn_inc_all_rights_reserved"
+        android:textColor="@android:color/black"
+        android:textSize="13sp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="40dp" >
+
+        <TextView
+            android:id="@+id/sys_welcome_logo_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sys_welcome_rl_appname"
+            android:layout_marginTop="60dp"
+            android:layout_centerHorizontal="true"
+            android:text="企业移动安全管理专家"
+            android:textColor="@color/webapp_blue"
+            android:textSize="32sp" />
+
+        <RelativeLayout
+            android:id="@+id/sys_welcome_rl_appname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp" >
+
+            <ImageView
+                android:id="@+id/sys_welcome_logo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/icon144" />
+
+            <TextView
+                android:id="@+id/app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/sys_welcome_logo"
+                android:layout_alignBottom="@+id/sys_welcome_logo"
+                android:layout_marginBottom="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/sys_welcome_logo"
+                android:padding="6dip"
+                android:text="@string/app_name"
+                android:textColor="@color/webapp_black"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/version_name"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignBaseline="@+id/app_name"
+                android:layout_alignBottom="@+id/app_name"
+                android:layout_toRightOf="@+id/app_name"
+                android:gravity="bottom"
+                android:paddingBottom="6dip"
+                android:text="@string/sys_version_name"
+                android:textColor="@color/webapp_black"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/sys_welcome_rl_appname"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical" >
+
+            <ProgressBar
+                android:id="@+id/refresh_list_footer_progressbar"
+                android:layout_width="16dip"
+                android:layout_height="16dip"
+                android:layout_gravity="center"
+                android:indeterminate="true"
+                android:indeterminateBehavior="repeat"
+                android:indeterminateDrawable="@drawable/common_loading3" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

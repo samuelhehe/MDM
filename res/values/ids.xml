@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- frg_safepolicy -->
+    <item name="policy_current" type="id"/>
+    <item name="policy_qrcode_img" type="id"/>
+    <item name="policy_qrcode" type="id"/>
+    <item name="policy_id" type="id"/>
+    <item name="update_date" type="id"/>
+    <item name="policy_content" type="id"/>
+    <item name="policy_id_content" type="id"/>
+    <item name="update_date_content" type="id"/>
+    <item name="policy_content_content" type="id"/>
+    <item name="device_state" type="id"/>
+    <item name="bt_status" type="id"/>
+    <item name="wifi_status" type="id"/>
+    <item name="camara_status" type="id"/>
+    <item name="is_lock" type="id"/>
+    <item name="bt_status_content" type="id"/>
+    <item name="wifi_status_content" type="id"/>
+    <item name="camara_status_content" type="id"/>
+    <item name="is_lock_content" type="id"/>
+
+    <!-- frg_notification_mgr -->
+    <item name="info_center_receive_date" type="id"/>
+    <item name="info_center_content" type="id"/>
+    <item name="info_center_command" type="id"/>
+    <item name="notification_recently" type="id"/>
+    <item name="notification_listview" type="id"/>
+    <item name="notification_textview_bar" type="id"/>
+
+    <!-- frg_filemgr -->
+    <item name="file_title" type="id"/>
+    <item name="file_receive_date" type="id"/>
+    <item name="file_content" type="id"/>
+    <item name="common_search_bar" type="id"/>
+    <item name="et_search_keyword" type="id"/>
+    <item name="iv_search_icon" type="id"/>
+    <item name="btn_clear_text" type="id"/>
+    <item name="btn_search" type="id"/>
+    <item name="file_listview" type="id"/>
+    <item name="file_textview_bar" type="id"/>
+    <item name="file_detail_title" type="id"/>
+    <item name="file_detail_receive_date" type="id"/>
+    <item name="file_detail_effective_date" type="id"/>
+
+    <!-- file_detail_content -->
+    <item name="file_detail_content" type="id"/>
+    <item name="file_detail_title_content" type="id"/>
+    <item name="file_detail_receive_date_content" type="id"/>
+    <item name="file_detail_effective_date_content" type="id"/>
+    <item name="file_detail_content_content" type="id"/>
+    <item name="back" type="id"/>
+    <item name="file_download" type="id"/>
+    <item name="file_show" type="id"/>
+
+    <!-- input_pwd_dialog -->
+    <item name="file_linkman" type="id"/>
+    <item name="file_linkman_content" type="id"/>
+    <item name="file_pwd" type="id"/>
+    <item name="file_pwd_content" type="id"/>
+
+    <!-- frg_home -->
+    <item name="home_userinfo_title_tv" type="id"/>
+    <item name="home_detail_userinfo_ll" type="id"/>
+    <item name="home_detail_userinfo_bg_ll" type="id"/>
+    <item name="home_detail_userinfo_bg_title_tv" type="id"/>
+    <item name="home_detail_userinfo_bg_content_tv" type="id"/>
+    <item name="home_detail_userinfo_phoneno_ll" type="id"/>
+    <item name="home_detail_userinfo_phoneno_title_tv" type="id"/>
+    <item name="home_detail_userinfo_phoneno_content_tv" type="id"/>
+    <item name="home_detail_userinfo_zhuanan_ll" type="id"/>
+    <item name="home_detail_userinfo_zhuanan_title_tv" type="id"/>
+    <item name="home_detail_userinfo_zhuanan_content_tv" type="id"/>
+    <item name="home_detail_userinfo_qianming_ll" type="id"/>
+    <item name="home_detail_userinfo_qianming_title_tv" type="id"/>
+    <item name="home_detail_userinfo_qianming_content_tv" type="id"/>
+    <item name="home_detail_userinfo_title_tv" type="id"/>
+    <item name="home_userinfo_rl" type="id"/>
+    <item name="home_userinfo_headicon_iv" type="id"/>
+    <item name="home_userinfo_userid_tv" type="id"/>
+    <item name="home_userinfo_username_tv" type="id"/>
+    <item name="home_userinfo_synctime_tv" type="id"/>
+
+    <!-- frg_blacklist -->
+
+    <item name="sys_frg_blacklist_title_tv" type="id"/>
+    <item name="sys_frg_blacklist_content_lv" type="id"/>
+
+    <!-- apps_item -->
+    <item name="app_title" type="id"></item>
+    <item name="app_receive_date" type="id"></item>
+    <item name="app_size" type="id"></item>
+
+    <!-- qrcode -->
+
+    <item name="decode" type="id"/>
+    <item name="decode_failed" type="id"/>
+    <item name="decode_succeeded" type="id"/>
+    <item name="quit" type="id"/>
+    <item name="restart_preview" type="id"/>
+    <item name="return_scan_result" type="id"/>
+
+</resources>

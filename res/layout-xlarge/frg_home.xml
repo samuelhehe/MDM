@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/background_light" >
+
+    <RelativeLayout
+        android:id="@id/home_userinfo_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/home_userinfo_title_tv"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/com_tencent_open_agent_seabar_input" >
+
+        <ImageView
+            android:id="@id/home_userinfo_headicon_iv"
+            android:layout_width="288dp"
+            android:layout_height="384dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/user_default_photo" />
+
+        <TextView
+            android:id="@id/home_userinfo_userid_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="60dp"
+            android:layout_toRightOf="@id/home_userinfo_headicon_iv"
+            android:text="@string/home_userinfo_userid_tv"
+            android:textColor="@color/webapp_black"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@id/home_userinfo_username_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/home_userinfo_userid_tv"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@id/home_userinfo_headicon_iv"
+            android:text="@string/home_userinfo_username_tv"
+            android:textColor="@color/webapp_black"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@id/home_detail_userinfo_phoneno_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/home_detail_userinfo_bg_title_tv"
+            android:layout_below="@id/home_detail_userinfo_bg_title_tv"
+            android:layout_marginTop="40dp"
+            android:paddingBottom="10dp"
+            android:text="@string/home_detail_userinfo_phoneno_title_tv"
+            android:textColor="@color/webapp_black"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@id/home_detail_userinfo_phoneno_content_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/home_detail_userinfo_phoneno_title_tv"
+            android:layout_alignBottom="@id/home_detail_userinfo_phoneno_title_tv"
+            android:layout_toRightOf="@id/home_detail_userinfo_phoneno_title_tv"
+            android:text="@string/home_detail_userinfo_phoneno_content_tv"
+            android:textColor="@color/webapp_black"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@id/home_detail_userinfo_bg_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/home_userinfo_username_tv"
+            android:layout_below="@id/home_userinfo_username_tv"
+            android:layout_marginTop="40dp"
+            android:text="@string/home_detail_userinfo_bg_title_tv"
+            android:textColor="@color/webapp_black"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@id/home_detail_userinfo_bg_content_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/home_detail_userinfo_phoneno_title_tv"
+            android:layout_alignLeft="@id/home_detail_userinfo_phoneno_content_tv"
+            android:text="@string/home_detail_userinfo_bg_content_tv"
+            android:textColor="@color/webapp_black"
+            android:textSize="26sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@id/home_detail_userinfo_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/home_detail_userinfo_title_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/com_tencent_open_agent_seabar_input"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@id/home_detail_userinfo_bg_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/frg_home_table_row_marginleft"
+            android:layout_marginTop="@dimen/frg_home_table_row_margintop"
+            android:layout_weight="0.33"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/home_detail_userinfo_phoneno_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/frg_home_table_row_marginleft"
+            android:layout_marginTop="@dimen/frg_home_table_row_margintop"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/home_detail_userinfo_zhuanan_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/frg_home_table_row_marginleft"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@id/home_detail_userinfo_zhuanan_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/home_detail_userinfo_zhuanan_title_tv"
+                android:textColor="@color/webapp_black"
+                android:textSize="26sp" />
+
+            <TextView
+                android:id="@id/home_detail_userinfo_zhuanan_content_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                android:text="@string/home_detail_userinfo_zhuanan_content_tv"
+                android:textColor="@color/webapp_black"
+                android:textSize="26sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/home_detail_userinfo_qianming_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="@dimen/frg_home_table_row_marginleft"
+            android:layout_marginTop="@dimen/frg_home_table_row_margintop"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@id/home_detail_userinfo_qianming_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/home_detail_userinfo_qianming_title_tv"
+                android:textColor="@color/webapp_black"
+                android:textSize="26sp" />
+
+            <ImageView
+                android:id="@id/home_detail_userinfo_qianming_content_tv"
+                android:layout_width="80dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/sign2" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@id/home_userinfo_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/home_userinfo_rl"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:text="@string/home_userinfo_title_tv"
+        android:textColor="@color/webapp_black"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@id/home_userinfo_synctime_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="@string/home_userinfo_synctime_tv"
+        android:textColor="@color/webapp_black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@id/home_detail_userinfo_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/home_userinfo_title_tv"
+        android:layout_below="@id/home_userinfo_rl"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="@string/home_detail_userinfo_title_tv"
+        android:textColor="@color/webapp_black"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dp"
+        android:padding="5dp"
+        android:text="@string/home_detail_xuandao_content_tv_hint"
+        android:textColor="@android:color/black"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/common_dialog_prompt_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="@string/home_detail_xuandao_title_tv_hint"
+        android:textColor="@android:color/black"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

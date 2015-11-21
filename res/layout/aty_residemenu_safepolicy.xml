@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:gravity="center" >
+
+    <ScrollView
+        android:id="@+id/sildingfinishlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:focusableInTouchMode="true"
+        android:hapticFeedbackEnabled="true"
+        android:scrollbars="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/sys_infocenter_content_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center" >
+
+            <include
+                android:id="@+id/sys_safepolicy_info_il"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp"
+                layout="@layout/frg_safepolicy" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

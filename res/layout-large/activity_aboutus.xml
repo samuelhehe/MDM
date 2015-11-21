@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.foxconn.emm.view.BounceScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/main_content_bg_middle_n"
+        android:fadingEdge="none"
+        android:fillViewport="true"
+        android:scrollbarThumbVertical="@drawable/scrollbar_handle_vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/shape_bg"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip" >
+
+            <TextView
+                android:id="@+id/activity_aboutus_content_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/com_tencent_open_agent_seabar_input"
+                android:gravity="left|start"
+                android:text="@string/sys_about_us_content_hint"
+                android:textColor="@color/webapp_black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/activity_aboutus_qrcode_title_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_aboutus_content_tv"
+                android:layout_marginTop="50dp"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/webapp_blue"
+                android:text="@string/sys_believeus_wo_will_do_better"
+                android:textSize="20sp"
+                 />
+            <ImageView android:id="@+id/activity_aboutus_qrcode_content_iv"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                android:layout_below="@+id/activity_aboutus_qrcode_title_tv"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/emm_outer_qrcode"
+                />
+            
+
+            <TextView
+                android:id="@+id/copyright_ch"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="50.0dip"
+                android:gravity="bottom|center"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:text="@string/atyabout_gds_copyright_ch"
+                android:textColor="@color/webapp_black"
+                android:textSize="15.0sp" />
+
+            <TextView
+                android:id="@+id/copyright"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15.0dip"
+                android:gravity="bottom|center"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:text="@string/copyright_2014_foxconn_inc_all_rights_reserved"
+                android:textColor="#ffbbbbbb"
+                android:textSize="15.0sp" />
+        </RelativeLayout>
+    </com.foxconn.emm.view.BounceScrollView>
+
+</LinearLayout>

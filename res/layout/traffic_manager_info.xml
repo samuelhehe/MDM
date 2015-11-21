@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light" >
+
+    <TableLayout
+        android:id="@+id/traffic_mgr_info_tl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="5dp" >
+
+        <TableRow
+            android:id="@+id/traffic_mgr_info_tl_type_tr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/traffic_mgr_info_type_title_tv"
+                android:text="限制类别:"
+                android:textColor="@android:color/background_dark"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/traffic_mgr_info_type_tv"
+                android:text=" 按照天限制"
+                android:textColor="@android:color/background_dark"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/traffic_mgr_info_tl_num_tr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/traffic_mgr_info_num_title_tv"
+                android:text="限制大小:"
+                android:textColor="@android:color/background_dark"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/traffic_mgr_info_num_tv"
+                android:text=" 100M"
+                android:textColor="@android:color/background_dark"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/traffic_mgr_info_tl_time_tr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/traffic_mgr_info_time_title_tv"
+                android:text="更新时间:"
+                android:textColor="@android:color/background_dark"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/traffic_mgr_info_time_tv"
+                android:text=" 2014年10月28日  15:30:28"
+                android:textColor="@android:color/background_dark"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/traffic_mgr_info_tl_desc_tr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/traffic_mgr_info_desc_title_tv"
+                android:text="限制描述:"
+                android:textColor="@android:color/background_dark"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/traffic_mgr_info_desc_tv"
+                android:singleLine="false"
+                android:text=" 按照天限制是GDSBG事业群为管控上网流量而设定的"
+                android:textColor="@android:color/background_dark"
+                android:textSize="16sp" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

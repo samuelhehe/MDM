@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.foxconn.emm.view.BounceScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/main_content_bg_middle_n"
+        android:fadingEdge="none"
+        android:fillViewport="true"
+        android:scrollbarThumbVertical="@drawable/scrollbar_handle_vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/shape_bg"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip" >
+
+            <ImageView
+                android:id="@+id/brand"
+                android:layout_width="90.0dip"
+                android:layout_height="90.0dip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30.0dip"
+                android:contentDescription="@null"
+                android:src="@drawable/icon144" />
+
+            <TextView
+                android:id="@+id/subVersion"
+                style="@style/D6_Font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/brand"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3.0dip"
+                android:includeFontPadding="false"
+                android:text="@string/app_name_gds"
+                android:textColor="@color/webapp_black" />
+
+            <TextView
+                android:id="@+id/app_information"
+                style="@style/B4_Font_white"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/subVersion"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20.0dip"
+                android:duplicateParentState="true"
+                android:gravity="center_horizontal"
+                android:text="GDS企业移动安全管理专家"
+                android:textColor="@color/webapp_blue"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/sys_about_versionname_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="44.0dip"
+                android:layout_below="@id/app_information"
+                android:layout_marginTop="35.0dip"
+                android:background="@drawable/common_strip_setting_top"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/sys_about_versionname_title_tv"
+                    style="@style/B4_Font_white"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:duplicateParentState="true"
+                    android:gravity="center"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="10.0dip"
+                    android:singleLine="true"
+                    android:text="当前版本" />
+
+                <TextView
+                    android:id="@+id/sys_about_versionname_content_tv"
+                    style="@style/B4_Font_white"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="3"
+                    android:duplicateParentState="true"
+                    android:gravity="center"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="10.0dip"
+                    android:singleLine="true"
+                    android:text="@string/sys_version_name" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sys_about_checkupdate_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="44.0dip"
+                android:layout_below="@id/sys_about_versionname_ll"
+                android:background="@drawable/common_strip_setting_middle2"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/sys_about_checkupdate_title_tv"
+                    style="@style/B4_Font_white"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.00"
+                    android:duplicateParentState="true"
+                    android:gravity="center"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="10.0dip"
+                    android:singleLine="true"
+                    android:text="检查更新" />
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="right|center_vertical" >
+
+                    <ImageView
+                        android:id="@+id/sys_about_checkupdate_content_tv"
+                        style="@style/B4_Font_white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="14dp"
+                        android:duplicateParentState="true"
+                        android:gravity="right"
+                        android:paddingLeft="30.0dip"
+                        android:paddingRight="10.0dip"
+                        android:src="@drawable/sys_about_navigationbar_arrow" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sys_about_specification_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="44.0dip"
+                android:layout_below="@id/sys_about_checkupdate_ll"
+                android:background="@drawable/common_strip_setting_middle2"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/sys_about_specification_title_tv"
+                    style="@style/B4_Font_white"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:duplicateParentState="true"
+                    android:gravity="center"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="10.0dip"
+                    android:singleLine="true"
+                    android:text="使用说明" />
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="right|center_vertical" >
+
+                    <ImageView
+                        android:id="@+id/sys_about_specification_content_tv"
+                        style="@style/B4_Font_white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="14dp"
+                        android:duplicateParentState="true"
+                        android:gravity="right"
+                        android:paddingLeft="30.0dip"
+                        android:paddingRight="10.0dip"
+                        android:src="@drawable/sys_about_navigationbar_arrow" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sys_about_aboutus_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="44.0dip"
+                android:layout_below="@id/sys_about_specification_ll"
+                android:background="@drawable/common_strip_setting_middle2"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/sys_about_aboutus_title_tv"
+                    style="@style/B4_Font_white"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:duplicateParentState="true"
+                    android:gravity="center"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="10.0dip"
+                    android:singleLine="true"
+                    android:text="关于我们" />
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="right|center_vertical" >
+
+                    <ImageView
+                        android:id="@+id/sys_about_aboutus_content_tv"
+                        style="@style/B4_Font_white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="14dp"
+                        android:duplicateParentState="true"
+                        android:gravity="right"
+                        android:paddingLeft="30.0dip"
+                        android:paddingRight="10.0dip"
+                        android:src="@drawable/sys_about_navigationbar_arrow" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sys_about_contact_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="44.0dip"
+                android:layout_below="@id/sys_about_aboutus_ll"
+                android:background="@drawable/common_strip_setting_bottom"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/sys_about_contact_title_tv"
+                    style="@style/B4_Font_white"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:duplicateParentState="true"
+                    android:gravity="center"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="10.0dip"
+                    android:singleLine="true"
+                    android:text="服务热线" />
+
+                <TextView
+                    android:id="@+id/sys_about_contactcontent_tv"
+                    style="@style/B4_Font_white"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="3"
+                    android:duplicateParentState="true"
+                    android:gravity="center"
+                    android:linksClickable="true"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="10.0dip"
+                    android:singleLine="true"
+                    android:text=" 579+70885" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/copyright_ch"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="50.0dip"
+                android:gravity="bottom|center"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:text="@string/atyabout_gds_copyright_ch"
+                android:textColor="@color/webapp_black"
+                android:textSize="15.0sp" />
+
+            <TextView
+                android:id="@+id/copyright"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15.0dip"
+                android:gravity="bottom|center"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:text="@string/copyright_2014_foxconn_inc_all_rights_reserved"
+                android:textColor="#ffbbbbbb"
+                android:textSize="15.0sp" />
+        </RelativeLayout>
+    </com.foxconn.emm.view.BounceScrollView>
+
+</LinearLayout>

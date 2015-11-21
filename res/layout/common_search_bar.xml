@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/common_search_bar"
+    android:layout_width="fill_parent"
+    android:layout_height="48.0dip"
+    android:background="@drawable/skin_searchbar_bg"
+    android:paddingLeft="10.0dip"
+    android:paddingRight="10.0dip" >
+
+    <EditText
+        android:id="@id/et_search_keyword"
+        android:layout_width="fill_parent"
+        android:layout_height="32.0dip"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/back"
+        android:background="@drawable/secondlayer_searchbox"
+        android:gravity="center_vertical"
+        android:hint="@string/searchdialog_find_contact_new"
+        android:maxLength="20"
+        android:paddingLeft="38dp"
+        android:paddingRight="20dp"
+        android:singleLine="true"
+        android:textColor="@color/sbc_snippet_text"
+        android:textColorHint="@color/skin_hint_input"
+        android:textCursorDrawable="@null"
+        android:textSize="16.0sp" />
+ 
+    <ImageView
+        android:id="@id/iv_search_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/et_search_keyword"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:src="@drawable/searchbox_icon" />
+
+    <Button
+        android:id="@id/btn_clear_text"
+        android:layout_width="32.0dip"
+        android:layout_height="32.0dip"
+        android:layout_alignRight="@id/et_search_keyword"
+        android:layout_centerVertical="true"
+        android:background="@drawable/share_nearby_guide_close_button_pressed"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:visibility="gone"
+        android:background="@drawable/com_tencent_open_agent_friends_btn_bg"
+        android:text="返回" />
+
+</RelativeLayout>

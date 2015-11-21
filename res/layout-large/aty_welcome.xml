@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/enroll_background7" >
+
+    <TextView
+        android:id="@+id/sys_welcome_logo_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/refresh_list_footer_progressbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="企业移动管理"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="32sp" />
+
+    <ImageView
+        android:id="@+id/sys_welcome_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/refresh_list_footer_progressbar"
+        android:layout_alignRight="@+id/refresh_list_footer_progressbar"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/icon144" />
+
+    <TextView
+        android:id="@+id/version_name"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignBaseline="@+id/app_name"
+        android:layout_alignBottom="@+id/app_name"
+        android:layout_toRightOf="@+id/app_name"
+        android:gravity="bottom"
+        android:padding="6dp"
+        android:paddingBottom="6dip"
+        android:text="@string/sys_version_name"
+        android:textColor="@color/webapp_black"
+        android:textSize="15sp"
+        android:visibility="visible" />
+
+    <ProgressBar
+        android:id="@+id/refresh_list_footer_progressbar"
+        android:layout_width="16dip"
+        android:layout_height="16dip"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:indeterminate="true"
+        android:indeterminateBehavior="repeat"
+        android:indeterminateDrawable="@drawable/common_loading3" />
+
+    <TextView
+        android:id="@+id/copy_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:padding="12dip"
+        android:text="@string/copyright_2014_foxconn_inc_all_rights_reserved"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/sys_welcome_logo"
+        android:layout_marginTop="33dp"
+        android:layout_toRightOf="@+id/sys_welcome_logo"
+        android:text="@string/app_name"
+        android:textColor="@color/webapp_black"
+        android:textSize="32sp" />
+
+</RelativeLayout>

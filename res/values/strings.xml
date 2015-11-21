@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">EMM</string>
+    <string name="app_name_gds">GDS EMM</string>
+
+    <!-- 版本信息 -->
+    <string name="copyright_2014_foxconn_inc_all_rights_reserved">Copyright © 2014 GDS Inc.All rights reserved.</string>
+    <string name="sys_version_name">3.0</string>
+    <string name="ok">OK</string>
+    <string name="changelog_full_title">更新日志</string>
+    <string name="changelog_title">更新日志</string>
+    <string name="emm_keep_running_background_content">EMM资安正在后台运行</string>
+    <string name="emm_keep_running_background_title_hint">EMM</string>
+    
+    <!-- 版本信息 -->
+  
+    <string name="frg_filemgr_file_detail_content_pwdhint">该文档查看需要密码(默认为:Foxconn88)</string>
+    
+    <string name="sys_seting_device_serial_no_tv_hint">设备编号设定</string>
+    <string name="sys_seting_device_serialno_title_tv_hint">设备编号:暂未设定</string>
+    <string name="sys_seting_device_serialno_content_btn_hint">修改设备编号</string>
+    <string name="sys_seting_device_serialno_content_mobile_btn_hint">修改</string>
+    <string name="sys_delete_device_serialno_content_btn_hint">删除设备编号</string>
+    <string name="sys_delete_device_serialno_content_mobile_btn_hint">删除</string>
+    <string name="sys_seting_device_safe_title_tv_hint">安全管理:    手势密码锁定</string>
+    <string name="sys_seting_device_sercurity_tv_hint">设备安全管理</string>
+    <string name="sys_seting_aboutus_tv_hint">关于</string>
+    <string name="sys_seting_abouts_more_tv_hint">了解更多：请点击这里</string>
+    <string name="sys_seting_aboutus_bt_hint">关于EMM</string>
+    <string name="home_detail_xuandao_title_tv_hint">资讯安全 人人有责</string>
+    <string name="home_detail_xuandao_content_tv_hint">"1.本信息是员工一人一本身份之凭证，不得伪造冒用 . \n2.携带平板出厂区时请您主动向保安出示核对此身份凭证 . \n3.如对EMM软件有任何疑问请联系EMM客服579+70885 ."</string>
+
+    <!-- App加图案锁 -->
+    <string name="lockscreen_access_pattern_start">"开始绘制图案"</string>
+    <string name="lockscreen_access_pattern_cleared">"图案已清除"</string>
+    <string name="lockscreen_access_pattern_cell_added">"已添加单元格"</string>
+    <string name="lockscreen_access_pattern_detected">"图案绘制完成"</string>
+    <string name="lockpattern_retry_button_text">"重试"</string>
+    <string name="lockpattern_continue_button_text">"继续"</string>
+    <string name="lockpattern_confirm_button_text">"确认"</string>
+    <string name="lockpattern_recording_intro_header">"绘制解锁图案"</string>
+    <string name="lockpattern_settings_help_how_to_record">"如何绘制解锁图案"</string>
+    <string name="lockpattern_recording_incorrect_too_short">"至少连接4个点，请重试"</string>
+    <string name="lockpattern_pattern_entered_header">"图案已记录"</string>
+    <string name="lockpattern_need_to_confirm">"请再次绘制解锁图案"</string>
+    <string name="lockpattern_need_to_unlock_wrong">"与上次输入不一致，请重试"</string>
+    <string name="lockpattern_pattern_confirmed_header">"确认保存新解锁图案"</string>
+    <string name="lockpattern_recording_inprogress">"完成后松开手指"</string>
+    <string name="gesture_password_guide_text">你可以创建一个解锁图案，这样他人在借用你的手机时，将无法打开应用。</string>
+    <string name="gesture_password_guide_creat_btn">创建手势密码</string>
+
+    <!-- 设备管理器 -->
+    <string name="admin_receiver_status">EMM设备管理器: %1$s</string>
+    <string name="admin_receiver_status_enabled">可用</string>
+    <string name="admin_receiver_status_disabled">不可用</string>
+    <string name="admin_receiver_status_pw_changed">密码已改变</string>
+    <string name="admin_receiver_status_pw_failed">密码修改失败</string>
+    <string name="admin_receiver_status_pw_succeeded">密码修改成功</string>
+    <string name="admin_receiver_status_disable_warning"> 取消激活之后,将不再受到资安设备管控保护,请谨慎选择.</string>
+    <string name="sample_device_admin">EMM设备管理器 </string>
+    <string name="sample_device_admin_description">EMM 设备管理器, 是公司移动管理资安政策管控功能, 该功能为用户提供了设备资安管控保护服务.取消之后,管控保护服务将受到影响.</string>
+    <string name="add_admin_extra_app_text"> 该选项是公司移动管理资安政策管控所需要的功能</string>
+    <string name="expiration_status_past">密码已过期  %1$s 前</string>
+    <string name="expiration_status_future">密码 %1$s 后将过期</string>
+
+    <!-- 设备管理器 -->
+
+
+    <!-- 应用崩溃信息 -->
+    <string name="app_error">应用程序错误</string>
+    <string name="app_error_message">很抱歉，应用程序出现错误，即将退出。\n请选择邮件的方式将此错误报告提交给我，我们会尽快修复这个问题，谢谢！</string>
+    <string name="submit_report">提交报告</string>
+    <string name="app_is_run_background">EMM正在后台运行</string>
+    <string name="sys_residemenu_identification">身份识别</string>
+
+    <!-- 应用管控提醒信息 -->
+    <string name="forbidden_warning_hint">由于公司资安规定，该App属于%1$s程序！</string>
+    <string name="forbidden_app_name_hint">应用名称</string>
+    <string name="forbidden_confirm_btn_hint">确定</string>
+    
+
+    <!-- 设备注册 -->
+    
+    
+    <string name="personnal_user_login_account_hint">输入账号(请输入设备持有人工号)</string>
+    <string name="emm_device_entroll_reg_btn">注册</string>
+    <string name="emm_device_entroll_reg_btn_cancel">取消</string>
+    <string name="personnal_user_login_pwd_pre">密 码：</string>
+    <string name="personnal_user_login_pwd_hint">输入密码(6-20个字符,默认密码为工号)</string>
+    <string name="personnal_user_login_verification_code">验证码：</string>
+    <string name="personnal_user_login_verification_hint">点击图片换一换</string>
+    <string name="personnal_user_login_remind_pwd">记住密码</string>
+    <string name="personnal_user_login_auto_login">自动登录</string>
+    <string name="personnal_user_login_forget_pwd">忘记密码?</string>
+    <string name="personnal_user_offline_online_authorized_title">离线注册用户验证消息</string>
+    <string name="personnal_user_offline_online_authorized_fail_msg">离线注册用户验证信息:\n EMM系统检测到当前离线注册用户不合法,系统即将退出请重新注册!</string>
+
+    <!-- 用户信息 -->
+    <string name="home_userinfo_userid_tv">工号: H26019XX</string>
+    <string name="home_userinfo_username_tv">姓名: 张三</string>
+    <string name="home_userinfo_title_tv">个人信息</string>
+    <string name="home_userinfo_synctime_tv">2014/09/11 14:59:32 同步</string>
+    <string name="home_detail_userinfo_bg_title_tv">事业群：</string>
+    <string name="home_detail_userinfo_bg_content_tv">GDSBG</string>
+    <string name="home_detail_userinfo_phoneno_title_tv">手机号：</string>
+    <string name="home_detail_userinfo_phoneno_content_tv">13838838388</string>
+    <string name="home_detail_userinfo_title_tv">专案信息</string>
+    <string name="home_detail_userinfo_zhuanan_title_tv">所属专案:</string>
+    <string name="home_detail_userinfo_zhuanan_content_tv">富士康集团教育平板专案</string>
+    <string name="home_detail_userinfo_qianming_title_tv">资安常委签名:</string>
+
+    <!-- frg_safepolicy -->
+    <string name="policy_current">当前安全政策</string>
+    <string name="policy_qrcode">政策扫描</string>
+    <string name="policy_id">政策编号：</string>
+    <string name="update_date">更新日期：</string>
+    <string name="policy_content">政策内容：</string>
+    <string name="device_state">设备状态信息</string>
+    <string name="bt_status">蓝牙状态：</string>
+    <string name="wifi_status">Wifi 状态：</string>
+    <string name="camara_status">相机状态：</string>
+    <string name="is_lock">密码锁定：</string>
+
+    <!-- about us -->
+    <string name="sys_about_us_content_hint">"\n\t\t\t企业移动管理(简称EMM)系统指的是企业部署的移动化管理,以企\n\t业移动设备和系统为基础目标的基础设施,有三个基本组成部分:\n\tMDM(移动设备管理)、MAM(移动应用管理)、MCM(移动内容管理)。
+\n\t\t电子化的出入厂区放行单，让您出入厂区更加方便快捷。
+\n\t\t安全化的移动设备管理，让您的设备轻松远程锁定定位。
+\n\t\t企业化的内部应用商店，让您轻松一手掌握企业应用。  
+\n\t\t及时性的资讯通知推送，让您在第一时间接收紧急通知。 
+\n
+\n \t\t\t\t\t  \t\t\t\t\t \t\t\t\t\t \t\t\t\t\t客服热线：579+70885\n"</string>
+    <string name="sys_about_us_content_hint_phone">"\n\t\t企业移动管理(简称EMM)系统指的是企业部署的移动化管理,以企业移动设备和系统为基础目标的基础设施,有三个基本组成部分:MDM(移动设备管理)、MAM(移动应用管理)、MCM(移动内容管理)。
+\n\t\t电子化的出入厂区放行单，让您出入厂区更加方便快捷。
+\n\t\t安全化的移动设备管理，让您的设备轻松远程锁定定位。
+\n\t\t企业化的内部应用商店，让您轻松一手掌握企业应用。  
+\n\t\t及时性的资讯通知推送，让您在第一时间接收紧急通知。 
+\n \t\t\t\t\t  \t\t\t\t\t 客服热线：579+70885\n"</string>
+    <string name="sys_believeus_wo_will_do_better">关注我们会做的更好</string>
+
+    <!-- 图片,pdf文件查看 -->
+    <string name="no_media_warning">Storage media not present</string>
+    <string name="no_media_hint">Sharing the storage media with a PC can make it inaccessible</string>
+    <string name="cancel">Cancel</string>
+    <string name="search_backwards">Search backwards</string>
+    <string name="search_forwards">Search forwards</string>
+    <string name="search_document">Search document</string>
+    <string name="picker_title_App_Ver_Dir">%1$s %2$s: %3$s</string>
+    <string name="outline_title">Table of Contents</string>
+    <string name="enter_password">Enter password</string>
+    <string name="text_not_found">Text not found</string>
+    <string name="searching_">Searching&#8230;</string>
+    <string name="toggle_links">Highlight and enable links</string>
+    <string name="no_further_occurrences_found">No further occurrences found</string>
+    <string name="select">Select</string>
+    <string name="search">Search</string>
+    <string name="copy">Copy</string>
+    <string name="strike_out">Strike-out</string>
+    <string name="delete">Delete</string>
+    <string name="highlight">Highlight</string>
+    <string name="underline">Underline</string>
+    <string name="edit_annotations">Edit annotations</string>
+    <string name="ink">Ink</string>
+    <string name="save">Save</string>
+    <string name="print">Print</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="parent_directory">[Up one level]</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="entering_reflow_mode">Entering reflow mode</string>
+    <string name="leaving_reflow_mode">Leaving reflow mode</string>
+    <string name="print_failed">Print failed</string>
+    <string name="select_text">Select text</string>
+    <string name="copied_to_clipboard">Copied to clipboard</string>
+    <string name="no_text_selected">No text selected</string>
+    <string name="draw_annotation">Draw annotation</string>
+    <string name="nothing_to_save">Nothing to save</string>
+    <string name="document_has_changes_save_them_">Document has changes. Save them?</string>
+    <string name="cannot_open_document">Cannot open document</string>
+    <string name="cannot_open_document_Reason">Cannot open document: %1$s</string>
+    <string name="cannot_open_file_Path">Cannot open file: %1$s</string>
+    <string name="cannot_open_buffer">Cannot open buffer</string>
+    <string name="fill_out_text_field">Fill out text field</string>
+    <string name="okay">Okay</string>
+    <string name="choose_value">Choose value</string>
+    <string name="not_supported">Not supported</string>
+    <string name="copy_text_to_the_clipboard">Copy text to the clipboard</string>
+    <string name="more">More</string>
+    <string name="accept">Accept</string>
+    <string name="copy_text">copy text</string>
+    <string name="format_currently_not_supported">Format currently not supported</string>
+    <string name="toggle_reflow_mode">Toggle reflow mode</string>
+    <!-- 图片,pdf文件查看 -->
+
+
+    <!-- 下载队列 -->
+    <string name="undownLoad_title">未下载</string>
+    <string name="download_complete_title">下载完成</string>
+    <!-- 下载队列 -->
+
+
+    <!-- 文件搜索 -->
+    <string name="searchdialog_find_contact_new">搜索</string>
+
+    <!-- 流量管理 -->
+    <string name="chart_bar">QQ流量详情</string>
+    <string name="traffic_manager">流量排行</string>
+    <string name="traffic">00.00KB</string>
+    <string name="atyabout_gds_copyright_ch">捷达世 GDS   版权所有</string>
+    <string name="sys_license_dialogtitle_tv_hint">企业移动管理(企业版)License认证</string>
+    <string name="sys_license_dialog_msg_content_tv_hint">\t请输入您所在的企业购买的序列号，验证通过后才能使用。请输入以下认证信息：</string>
+    <string name="sys_license_please_input_enterprisename_hint_et">请输入企业名称</string>
+    <string name="sys_licnese_please_input_licneseno_hint_et">请输入所购买的序列号</string>
+    <string name="sys_license_dialog_varlidate_hint_btn">验证序列号</string>
+    <string name="sys_license_dialog_varlidate_showresult_hint">"恭喜,验证通过. 有效期至:2050年12月25日 "</string>
+    <string name="sys_license_dialog_validate_close_hint">确定关闭</string>
+    <string name="sys_license_dialog_validate_close_confirmexit_hint">确认退出</string>
+    <string name="sys_license_dialog_validate_showdeadline_warning_hint">序列号已过期,您还可以继续使用8天</string>
+    <string name="sys_license_dialog_validate_showdeadline_error_hint">序列号已过期,赠送延期15天已结束,请联系企业相关人员进行续费.</string>
+    <string name="sys_license_dialog_validate_revalidate_btn_hint">重新验证</string>
+    <string name="emm_license_welcome_pager1_title">欢迎使用GDS EMM </string>
+    <string name="emm_license_welcome_pager1_content">GDS EMM 是企业移动化过程中对移动设备的一种IT管理策略和管理工具，会从用户、设备、策略三个维度来实现对移动设备的便捷管理和统一配置。</string>
+    <string name="emm_license_welcome_pager2_title">企业移动设备安全管理助手</string>
+    <string name="emm_license_welcome_pager2_content">专注于企业移动设备安全管理，协助企业从统一管理移动设备、快速管理和分发企业移动应用、快速推送企业资讯三个层次进行企业移动安全管理。</string>
+    <string name="emm_license_welcome_pager3_title">让我们开始吧</string>
+    <string name="emm_license_welcome_pager3_content">面向未来，GDS EMM将持续创新，为企业移动化战略增添风采，让信息无处不在。</string>
+    <string name="sys_safepolicy_status_nocontrol">不管控</string>
+
+</resources>

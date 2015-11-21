@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/sildingfinishlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.22"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/sys_infocenter_content_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center" />
+        </RelativeLayout>
+
+        <fragment
+            android:id="@+id/notifi_frg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="com.foxconn.app.aty.FrgNotification" />
+
+        <fragment
+            android:id="@+id/notifi_calendar_frg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="com.foxconn.app.aty.FrgNotifiCalendar" />
+
+        <fragment
+            android:id="@+id/file_frg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="com.foxconn.app.aty.FrgFile" />
+
+        <fragment
+            android:id="@+id/pic_frg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="com.foxconn.app.aty.FrgPic" />
+        
+        <fragment 
+            android:id="@+id/web_frg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="com.foxconn.app.aty.FrgWeb"/>
+
+        <fragment
+            android:id="@+id/app_frg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="com.foxconn.app.aty.FrgApp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:id="@+id/lay_notification"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25" >
+
+            <ImageView
+                android:id="@+id/img_notification"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/tab_blue" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center_vertical|center_horizontal" >
+
+                <TextView
+                    android:id="@+id/common_dialog_prompt_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="通知"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/lay_file_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25" >
+
+            <ImageView
+                android:id="@+id/img_file"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/tab_blue" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|center_horizontal" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="文件/图片"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/lay_web"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25" >
+
+            <ImageView
+                android:id="@+id/img_pic_web"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/tab_blue" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|center_horizontal" >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="网页"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/lay_app"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25" >
+
+            <ImageView
+                android:id="@+id/img_app"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/tab_blue" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|center_horizontal" >
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="应用"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

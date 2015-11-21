@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:gravity="center" >
+
+    <ScrollView
+        android:id="@+id/sildingfinishlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:focusableInTouchMode="true"
+        android:hapticFeedbackEnabled="true"
+        android:scrollbars="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/sys_infocenter_content_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/trafficmgr_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="数据流量使用情况"
+                android:textColor="@android:color/background_dark"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/trafficmgr_rl_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/trafficmgr_title_tv"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/trafficmgr_title_tv"
+                android:text="2014年9月24日"
+                android:textColor="@android:color/background_dark"
+                android:textSize="12sp" />
+
+            <RelativeLayout
+                android:id="@+id/trafficmgr_current_left_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trafficmgr_title_tv"
+                android:background="@android:color/background_light"
+                android:gravity="center" >
+
+                <RelativeLayout
+                    android:layout_width="210dip"
+                    android:layout_height="210dip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/progress_circle_bg"
+                    android:clickable="true"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/stepText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="已使用"
+                        android:textColor="@android:color/darker_gray" />
+
+                    <TextView
+                        android:id="@+id/numberText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/stepText"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/maxText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/numberText"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@android:color/darker_gray" />
+                </RelativeLayout>
+
+                <com.ab.view.progress.AbCircleProgressBar
+                    android:id="@+id/circleProgressBar"
+                    android:layout_width="210dip"
+                    android:layout_height="210dip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/sys_aty_residemenu_trafficmgr_rl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/trafficmgr_current_left_rl"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/trafficmgr_rl_limit_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:text="限制说明: 每天限制流量100M"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/trafficmgr_rl_limit_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/trafficmgr_rl_limit_desc"
+                    android:layout_below="@+id/trafficmgr_rl_limit_desc"
+                    android:layout_marginTop="10dp"
+                    android:text="流量限制: 每天100M"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <include
+                android:id="@+id/sys_aty_trafficmgr_category_item"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sys_aty_residemenu_trafficmgr_rl"
+                android:layout_marginTop="10dp"
+                layout="@layout/traffic_mgr_category_item" />
+
+            <Button
+                android:id="@+id/sys_aty_trafficmar_check_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sys_aty_trafficmgr_category_item"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:background="@android:color/holo_blue_light"
+                android:padding="10dp"
+                android:text="流量校正"
+                android:textColor="@android:color/background_light"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

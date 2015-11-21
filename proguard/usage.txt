@@ -1,0 +1,414 @@
+com.foxconn.app.BuildConfig
+com.foxconn.app.Manifest
+com.foxconn.app.Manifest$permission
+com.foxconn.app.R:
+    10:10:public R()
+com.foxconn.app.R$anim
+com.foxconn.app.R$animator
+com.foxconn.app.R$attr
+com.foxconn.app.R$bool
+com.foxconn.app.R$color
+com.foxconn.app.R$dimen
+com.foxconn.app.R$drawable
+com.foxconn.app.R$id
+com.foxconn.app.R$integer
+com.foxconn.app.R$layout
+com.foxconn.app.R$raw
+com.foxconn.app.R$string
+com.foxconn.app.R$style
+com.foxconn.app.R$styleable:
+    2558:2558:public R$styleable()
+com.foxconn.app.R$xml
+com.foxconn.app.aty.AtyLimitApps$HomeWatcherReceiver:
+    private static final java.lang.String LOG_TAG
+    private static final java.lang.String SYSTEM_DIALOG_REASON_KEY
+    private static final java.lang.String SYSTEM_DIALOG_REASON_RECENT_APPS
+    private static final java.lang.String SYSTEM_DIALOG_REASON_HOME_KEY
+    private static final java.lang.String SYSTEM_DIALOG_REASON_LOCK
+    private static final java.lang.String SYSTEM_DIALOG_REASON_ASSIST
+com.foxconn.app.aty.AtyWelcome:
+    public static final int REQUEST_CODE_ENABLE_ADMIN
+    public static final java.lang.String FLAG_FROM_ATY
+    public static final java.lang.String FLAG_FROM_ATY_VALUE
+    199:253:private void fillLimitlistData()
+    401:421:public void createShortCut(android.app.Activity,java.lang.String,java.lang.String,int)
+    488:500:private void addShortcut_old()
+com.foxconn.app.aty.CaptureActivity:
+    262:265:public void restartPreviewAfterDelay(long)
+com.foxconn.app.aty.FrgBlackApp:
+    private static final int LOAD_COMPLETE
+    private static final int LOAD_FAIL
+com.foxconn.app.aty.FrgFile:
+    private com.foxconn.app.App app
+    private com.foxconn.emm.swipemenulistview.SwipeMenuItem openItem
+com.foxconn.app.aty.FrgLimitApp:
+    private static final int LOAD_COMPLETE
+    private static final int LOAD_FAIL
+com.foxconn.app.aty.FrgPic:
+    private com.foxconn.emm.swipemenulistview.SwipeMenuItem openItem
+com.foxconn.app.aty.FrgWhiteApp:
+    private static final int LOAD_COMPLETE
+    private static final int LOAD_FAIL
+com.foxconn.app.aty.ShowWebpage$WebPageClient:
+    63:65:public boolean onJsAlert(android.webkit.WebView,java.lang.String,java.lang.String,android.webkit.JsResult)
+com.foxconn.emm.adapter.DownloadQueueExpandableListAdapter:
+    private static final java.lang.String TAG
+    private static final boolean D
+com.foxconn.emm.dao.DBMsgHelper
+com.foxconn.emm.dao.DBUserInfoHelper:
+    public static final int FHEAD
+    public static final int FDEVICE
+    119:122:public int delUserByUserId(java.lang.String)
+com.foxconn.emm.dao.LimitListDao:
+    129:141:public java.util.List getFilteredPackageName(java.util.List)
+    307:313:public void deleteByPackageName(java.lang.String)
+com.foxconn.emm.dao.OffLineDatabase:
+    private static final java.lang.String DATABASE_NAME
+    private static final int DATABASE_VERSION
+    private static final java.lang.String DATABASE_TABLE
+com.foxconn.emm.dao.SQLiteAssetHelper:
+    private static final java.lang.String ASSET_DB_PATH
+    386:387:public void setForcedUpgradeVersion(int)
+    398:399:public void setForcedUpgrade(int)
+    406:407:public void setForcedUpgrade()
+com.foxconn.emm.dao.TrafficAppsOptDao:
+    private static final java.lang.String TAG
+    52:84:public java.util.TreeMap getTrafficDataByUidAndDay(int,int,int,int)
+    99:139:public java.util.TreeMap getTrafficDetailsDataByUidAndDay(int,int,int,int)
+    272:320:public java.util.List getTrafficAppsByDay(int,int,int)
+    429:434:public void saveToAppTrafficDB(java.util.List)
+    444:450:public void update(java.lang.String,java.lang.String)
+com.foxconn.emm.dao.TrafficOptDao:
+    171:216:public com.foxconn.emm.bean.SysTraffic getTrafficSingleSysDataByDay(int,int,int)
+com.foxconn.emm.dao.Utils:
+    14:14:Utils()
+com.foxconn.emm.db.DBInfo
+com.foxconn.emm.db.DBInfo$DB
+com.foxconn.emm.db.DBInfo$Table
+com.foxconn.emm.lock.CreateGesturePasswordActivity:
+    private static final int ID_EMPTY_MESSAGE
+    private static final java.lang.String KEY_UI_STAGE
+    private static final java.lang.String KEY_PATTERN_CHOICE
+com.foxconn.emm.lock.LockPasswordUtils
+com.foxconn.emm.lock.LockPasswordUtils$PasswordFileObserver
+com.foxconn.emm.lock.LockPatternUtils:
+    private static final java.lang.String TAG
+    private static final java.lang.String LOCK_PATTERN_FILE
+    public static final int MIN_LOCK_PATTERN_SIZE
+    public static final int FAILED_ATTEMPTS_BEFORE_TIMEOUT
+    public static final int MIN_PATTERN_REGISTER_FAIL
+    public static final long FAILED_ATTEMPT_TIMEOUT_MS
+com.foxconn.emm.provider.AppForbiddenProvider:
+    private static final int INSERT
+    private static final int DELETE
+com.foxconn.emm.receiver.DeviceAdminSampleReceiver:
+    private static final java.lang.String TAG
+    62:70:private void killSpecificProcessByPackageName(android.app.ActivityManager,java.lang.String,android.content.Context)
+com.foxconn.emm.receiver.EMMBroadcastReceiver:
+    public static final java.lang.String BOOT_COMPLETED_ACTION
+    public static final java.lang.String SYSTEM_SHUTDOWN_ACTION
+com.foxconn.emm.service.EMMBaseIntentService:
+    public static final java.lang.String NOTIFICATION_FLAG_MSGTYPE
+    private static final java.lang.String WAKELOCK_KEY
+    private static final java.lang.String TAG
+    private static final int MAX_TICKER_MSG_LEN
+    protected android.os.PowerManager$WakeLock mWakeLock
+    protected abstract void onError(android.content.Context,java.lang.String)
+    protected abstract void onRegistered(android.content.Context,java.lang.String)
+com.foxconn.emm.service.EMMIntentService:
+    460:460:protected void onError(android.content.Context,java.lang.String)
+    468:468:protected void onRegistered(android.content.Context,java.lang.String)
+    67:67:static synthetic com.foxconn.emm.dao.TrafficOptDao access$0(com.foxconn.emm.service.EMMIntentService)
+    65:65:static synthetic com.foxconn.emm.dao.TrafficAppsOptDao access$1(com.foxconn.emm.service.EMMIntentService)
+com.foxconn.emm.service.EMMIntentService$SyncAppsTrafficTask
+com.foxconn.emm.service.EMMIntentService$SyncDeviceTrafficTask
+com.foxconn.emm.service.EMMMonitorProcessManager:
+    74:75:public void startCollectAppsTraffic()
+    81:82:public void startCollectSysTrafficTask()
+    88:90:private void submitCollectSysTrafficTask()
+    133:135:public void submitSyncAppsTrafficTask()
+    553:554:public void setEmmMonitorService(com.foxconn.emm.service.EMMMonitorService)
+    560:560:public android.content.SharedPreferences getSharedPrefs()
+    568:569:public void setSharedPrefs(android.content.SharedPreferences)
+com.foxconn.emm.service.EMMMonitorProcessManager$TrafficStatisticsCollector:
+    261:261:protected EMMMonitorProcessManager$TrafficStatisticsCollector()
+com.foxconn.emm.service.EMMMonitorService:
+    private static final java.lang.String SERVICE_NAME
+    420:420:public com.foxconn.emm.service.ServiceManager getServiceManager()
+com.foxconn.emm.service.EMMMonitorService$EMMMonitorBinder:
+    195:196:public void removeTempStopLimit(com.foxconn.emm.bean.LimitListInfo)
+com.foxconn.emm.service.EMMProcessManager:
+    107:107:public void stopProcess()
+    598:599:public void setEmmService(com.foxconn.emm.service.EMMService)
+    641:641:public com.foxconn.emm.tools.PolicyControl getPolicyControl()
+    649:650:public void setPolicyControl(com.foxconn.emm.tools.PolicyControl)
+    656:656:public android.content.SharedPreferences getSharedPrefs()
+    664:665:public void setSharedPrefs(android.content.SharedPreferences)
+com.foxconn.emm.service.EMMProcessManager$DownloadUpdateApk
+com.foxconn.emm.service.IMonitorService:
+    public abstract void removeTempStopLimit(com.foxconn.emm.bean.LimitListInfo)
+com.foxconn.emm.service.ServiceManager:
+    92:94:public void stopNotificationService()
+    114:116:public void stopEMMMonitorService()
+    124:132:public void startEMMService()
+    135:137:public void stopEMMService()
+com.foxconn.emm.service.ServiceManager$3
+com.foxconn.emm.swipemenulistview.SwipeMenu:
+    34:35:public void removeMenuItem(com.foxconn.emm.swipemenulistview.SwipeMenuItem)
+    42:42:public com.foxconn.emm.swipemenulistview.SwipeMenuItem getMenuItem(int)
+    46:46:public int getViewType()
+com.foxconn.emm.swipemenulistview.SwipeMenuItem:
+    private int id
+    29:29:public int getId()
+    33:34:public void setId(int)
+    61:62:public void setTitle(int)
+    69:70:public void setIcon(android.graphics.drawable.Drawable)
+    85:86:public void setBackground(int)
+com.foxconn.emm.tools.FileDES:
+    66:87:public void doEncryptFile(java.io.InputStream,java.lang.String)
+    100:101:public void doEncryptFile(java.lang.String,java.lang.String)
+com.foxconn.emm.tools.NetWorkTools
+com.foxconn.emm.tools.PakageInfoService:
+    27:27:public PakageInfoService()
+    82:94:public static java.util.List getInstalledAppInputParams(android.content.Context)
+    103:123:public static java.lang.String getInstalledAppInputParamsJsonStr(java.util.List)
+com.foxconn.emm.tools.PolicyControl:
+    public static final long MS_PER_MINUTE
+    public static final long MS_PER_HOUR
+    public static final long MS_PER_DAY
+    167:170:public void openNetCard()
+com.foxconn.emm.tools.RequestResultHandler
+com.foxconn.emm.tools.UploadHeadImgTools:
+    11:11:public UploadHeadImgTools()
+com.foxconn.emm.tools.WiFiAutoConnManager:
+    private static final java.lang.String TAG
+com.foxconn.emm.utils.ApplicationDetailInfo:
+    private static final java.lang.String SCHEME
+    private static final java.lang.String APP_PKG_NAME_21
+    private static final java.lang.String APP_PKG_NAME_22
+    private static final java.lang.String APP_DETAILS_PACKAGE_NAME
+    private static final java.lang.String APP_DETAILS_CLASS_NAME
+    78:87:public void launchApp(java.lang.String)
+com.foxconn.emm.utils.ChangeLog:
+    private static final java.lang.String VERSION_KEY
+    private static final java.lang.String NO_VERSION
+    private static final java.lang.String EOCL
+    private static final java.lang.String TAG
+    92:92:public java.lang.String getLastVersion()
+    100:100:public java.lang.String getThisVersion()
+    127:127:public android.app.AlertDialog getLogDialog()
+    134:134:public android.app.AlertDialog getFullLogDialog()
+    138:171:private android.app.AlertDialog getDialog(boolean)
+    177:187:private void updateVersionInPreferences()
+    194:194:public java.lang.String getLog()
+    201:201:public java.lang.String getFullLog()
+    215:282:private java.lang.String getLog(boolean)
+    286:295:private void openList(com.foxconn.emm.utils.ChangeLog$Listmode)
+    298:304:private void closeList()
+    314:315:public void dontuseSetLastVersion(java.lang.String)
+    174:174:static synthetic void access$0(com.foxconn.emm.utils.ChangeLog)
+com.foxconn.emm.utils.ChangeLog$1
+com.foxconn.emm.utils.ChangeLog$2
+com.foxconn.emm.utils.Constant
+com.foxconn.emm.utils.DateUtil:
+    public static final long HOURS_MILLIS
+    public static final long HALF_DAY_MILLIS
+    public static final long DAY_MILLIS
+    public static final long WEEK_MILLIS
+    public static final long MONTH_MILLIS
+    public static final java.lang.String DATE_DEFAULT_FORMATE
+    public static final java.lang.String DATE_FORMATE_ALL
+    public static final java.lang.String DATE_FORMATE_RATE
+    public static final java.lang.String DATE_FORMATE_TRANSACTION
+    public static final java.lang.String DATE_FORMATE_DAY_HOUR_MINUTE
+    public static final java.lang.String DATE_FORMATE_HISTORY
+    public static final java.lang.String DATE_FORMATE_HOUR_MINUTE
+    10:10:public DateUtil()
+    47:47:public static java.lang.String toTime(long)
+    57:57:public static java.lang.String toTime(long,java.lang.String)
+    67:74:public static java.lang.String toTime(java.util.Date,java.lang.String)
+    85:106:public static java.lang.String getTimeAgo(android.content.Context,long)
+    118:122:public static java.util.Calendar addDay(java.util.Calendar,int)
+com.foxconn.emm.utils.EMMContants:
+    public static final boolean DEBUG
+    10:10:public EMMContants()
+com.foxconn.emm.utils.EMMContants$DialogFlag
+com.foxconn.emm.utils.EMMContants$DialogText
+com.foxconn.emm.utils.EMMContants$EMMAction
+com.foxconn.emm.utils.EMMContants$EMMPrefContant
+com.foxconn.emm.utils.EMMContants$EMMUSERINFO
+com.foxconn.emm.utils.EMMContants$FrgNotiContants
+com.foxconn.emm.utils.EMMContants$LIMITLIST_CONTANT
+com.foxconn.emm.utils.EMMContants$LocalConf:
+    public static final java.lang.String LocalHost_dirpath
+    public static final java.lang.String HeadIcon_dirpath
+    public static final java.lang.String UpdateApp_dirpath
+    public static final java.lang.String encryption_dirpath
+    public static final java.lang.String decryption_dirpath
+    public static final java.lang.String download_dirpath
+    344:344:public EMMContants$LocalConf()
+com.foxconn.emm.utils.EMMContants$MsgType
+com.foxconn.emm.utils.EMMContants$RefListContants
+com.foxconn.emm.utils.EMMContants$ReqContants
+com.foxconn.emm.utils.EMMContants$SYSCONF
+com.foxconn.emm.utils.EMMContants$ToastText
+com.foxconn.emm.utils.EMMContants$XMPPCONF:
+    public static final java.lang.String SHARED_PREFERENCE_NAME
+    public static final java.lang.String XMPP_BASEHOST
+    public static final int XMPP_BASEPORT
+    public static final java.lang.String XMPP_APIKEY
+    public static final java.lang.String API_KEY
+    public static final java.lang.String XMPP_HOST
+    public static final java.lang.String XMPP_PORT
+    public static final java.lang.String XMPP_USERNAME
+    public static final java.lang.String XMPP_PASSWORD
+    public static final java.lang.String USER_ID
+    public static final java.lang.String SETTINGS_SOUND_ENABLED
+    public static final java.lang.String SETTINGS_VIBRATE_ENABLED
+    public static final java.lang.String SETTINGS_TOAST_ENABLED
+    public static final java.lang.String NOTIFICATION_ID
+    public static final java.lang.String NOTIFICATION_API_KEY
+    public static final java.lang.String NOTIFICATION_TITLE
+    public static final java.lang.String NOTIFICATION_MESSAGE
+    public static final java.lang.String ACTION_PROCESS_NOTIFICATION
+    public static final java.lang.String ACTION_NOTIFICATION_CLICKED
+    public static final java.lang.String ACTION_NOTIFICATION_CLEARED
+    250:250:public EMMContants$XMPPCONF()
+com.foxconn.emm.utils.EMMPreferences:
+    private static android.content.SharedPreferences fileStatus
+    10:10:public EMMPreferences()
+    25:25:private static android.content.SharedPreferences getFileSU(android.content.Context)
+    62:66:public static void setTotalData(android.content.Context,java.lang.String)
+    89:94:public static void setCurrentPolicyData(android.content.Context,java.lang.String)
+    97:103:public static com.foxconn.emm.bean.TimerJSONPolicy getCurrentPolicyData(android.content.Context)
+    158:159:public static java.lang.String getDeviceID(android.content.Context)
+    163:166:public static void setDeviceID(android.content.Context,java.lang.String)
+    285:289:public static void setLicenseIsEnable(android.content.Context,boolean)
+    298:299:public static java.lang.String getUserBGID(android.content.Context)
+    325:326:public static java.lang.String getIMEI(android.content.Context)
+    359:360:public static java.lang.Boolean getOffLineEnrollStatus(android.content.Context)
+    365:368:public static void setOffLineEnrollStatus(android.content.Context,java.lang.Boolean)
+    387:391:public static void setIsIntentAtyFImg(android.content.Context,boolean)
+    394:395:public static boolean getIsIntentAtyFImg(android.content.Context)
+com.foxconn.emm.utils.EMMReqParamsUtils:
+    119:124:public static java.lang.String getUpdateLocationStr(android.content.Context,java.lang.String,java.lang.String)
+    134:139:public static java.lang.String getUpdateDeviceNumberStr(android.content.Context,java.lang.String)
+    658:658:public static java.lang.String getSysLicenseReactivate(android.content.Context)
+com.foxconn.emm.utils.EMMUtils
+com.foxconn.emm.utils.FileUtils
+com.foxconn.emm.utils.HttpClientUtil:
+    protected static final java.lang.String TAG
+    protected static final boolean DEBUG
+    37:37:public HttpClientUtil()
+    45:66:public static java.lang.String getRequest(java.lang.String,java.lang.String)
+    127:146:public static java.lang.String getRequest2(java.lang.String,java.lang.String)
+    157:170:public static java.lang.String getDataStr(org.apache.http.HttpResponse)
+    207:226:public static java.lang.String postRequest(java.lang.String,java.util.Map)
+    232:254:public static java.lang.String postRequest2(java.lang.String,java.util.Map)
+    259:295:public static void sendHttpRequest(java.lang.String,com.foxconn.emm.utils.HttpClientUtil$HttpCallbackListener)
+    311:319:public static int check(int)
+com.foxconn.emm.utils.HttpClientUtil$1
+com.foxconn.emm.utils.HttpClientUtil$2
+com.foxconn.emm.utils.HttpClientUtil$3
+com.foxconn.emm.utils.HttpClientUtil$HttpCallbackListener
+com.foxconn.emm.utils.IconImgUtils:
+    11:11:public IconImgUtils()
+com.foxconn.emm.utils.ImageUtils:
+    163:169:public static byte[] bitmapToByte(android.graphics.Bitmap)
+    179:179:public static android.graphics.Bitmap byteToBitmap(byte[])
+    214:221:public android.graphics.Bitmap getImgFromLocal(java.lang.String)
+    236:242:public static android.graphics.Bitmap decodeSampledBitmapFromResource(android.content.res.Resources,int,int,int)
+    256:261:public static android.graphics.Bitmap decodeSampledBitmapFromFilePath(java.lang.String,int,int)
+    276:286:public static int calculateInSampleSize(android.graphics.BitmapFactory$Options,int,int)
+    323:332:public static android.graphics.drawable.BitmapDrawable zoomBitmap(android.graphics.Bitmap,java.lang.Float,java.lang.Float)
+    346:354:static android.graphics.Bitmap drawableToBitmap(android.graphics.drawable.Drawable)
+    367:382:public static android.graphics.Bitmap getRoundCornerBitmap(android.graphics.Bitmap,float)
+    394:433:public static android.graphics.Bitmap createReflectionImageWithOrigin(android.graphics.Bitmap,int)
+    450:504:static android.graphics.Bitmap haloEffect(android.graphics.Bitmap,int,int,float)
+    516:588:public static android.graphics.Bitmap addFrame(android.graphics.Bitmap,android.graphics.Bitmap)
+    606:631:public android.graphics.Bitmap getImageThumbnail(java.lang.String,int,int)
+    635:669:public android.graphics.Bitmap decodeFile(java.lang.String,int[])
+    691:695:public android.graphics.Bitmap getVideoThumbnail(java.lang.String,int,int,int)
+    700:715:private static android.graphics.Bitmap drawImageDropShadow(android.graphics.Bitmap)
+    720:721:static void setCornerRadii(android.graphics.drawable.GradientDrawable,float,float,float,float)
+    731:772:public android.graphics.Bitmap BitmapElefct(android.graphics.Bitmap,int)
+    784:804:public android.graphics.Bitmap getBitmapFromFile(java.io.File,int,int)
+    817:829:public static int computeSampleSize(android.graphics.BitmapFactory$Options,int,int)
+    834:852:private static int computeInitialSampleSize(android.graphics.BitmapFactory$Options,int,int)
+    864:893:public android.graphics.Bitmap createReflection(android.graphics.Bitmap,int)
+    904:910:public android.graphics.Bitmap readBitMap(int,android.content.Context)
+com.foxconn.emm.utils.L:
+    private static final java.lang.String TAG
+    10:10:public L()
+    31:33:public static void v(java.lang.String)
+com.foxconn.emm.utils.LogUtil
+com.foxconn.emm.utils.ParseXmlUtils:
+    12:12:public ParseXmlUtils()
+com.foxconn.emm.utils.PreferenceUtils
+com.foxconn.emm.utils.PreferencesUtils:
+    6:6:public PreferencesUtils()
+    41:41:public static java.lang.String getString(android.content.Context,java.lang.String)
+    75:79:public static boolean putInt(android.content.Context,java.lang.String,int)
+    94:94:public static int getInt(android.content.Context,java.lang.String)
+    110:112:public static int getInt(android.content.Context,java.lang.String,int)
+    127:131:public static boolean putLong(android.content.Context,java.lang.String,long)
+    146:146:public static long getLong(android.content.Context,java.lang.String)
+    162:164:public static long getLong(android.content.Context,java.lang.String,long)
+    179:183:public static boolean putFloat(android.content.Context,java.lang.String,float)
+    198:198:public static float getFloat(android.content.Context,java.lang.String)
+    214:216:public static float getFloat(android.content.Context,java.lang.String,float)
+    231:235:public static boolean putBoolean(android.content.Context,java.lang.String,boolean)
+    250:250:public static boolean getBoolean(android.content.Context,java.lang.String)
+    267:269:public static boolean getBoolean(android.content.Context,java.lang.String,boolean)
+com.foxconn.emm.utils.ProcessUtil
+com.foxconn.emm.utils.ShellUtils
+com.foxconn.emm.utils.ShellUtils$CommandResult
+com.foxconn.emm.utils.T:
+    12:12:public T()
+    39:46:public static void showShort(android.content.Context,int)
+    71:78:public static void showLong(android.content.Context,int)
+    105:112:public static void show(android.content.Context,int,int)
+    116:119:public static void hideToast()
+com.foxconn.emm.utils.TaskUtil:
+    10:10:public TaskUtil()
+    22:25:public static int getProcessCount(android.content.Context)
+    29:33:public static java.lang.String getMemeorySize(android.content.Context)
+com.foxconn.emm.utils.TestNetUtils:
+    private android.content.Context context
+    private static final java.lang.String innerUrl
+    17:19:public TestNetUtils(android.content.Context)
+com.foxconn.emm.utils.TextFormater:
+    public static final java.lang.String simpleDateFormat_Home
+    10:10:public TextFormater()
+    13:23:public static java.lang.String getDataSize(long)
+    28:28:public static java.lang.String getKBDataSize(long)
+    172:187:public static java.lang.String dataFormat(long)
+    192:192:public static java.lang.String getSizeFromKB(long)
+    238:247:public static long getCommonTimeToLong(java.lang.String)
+com.foxconn.emm.utils.ToastUtils:
+    9:9:public ToastUtils()
+    12:13:public static void show(android.content.Context,int)
+    16:17:public static void show(android.content.Context,int,int)
+    28:29:public static varargs void show(android.content.Context,int,java.lang.Object[])
+    32:33:public static varargs void show(android.content.Context,java.lang.String,java.lang.Object[])
+    36:37:public static varargs void show(android.content.Context,int,int,java.lang.Object[])
+    40:41:public static varargs void show(android.content.Context,java.lang.String,int,java.lang.Object[])
+com.foxconn.emm.utils.Traffic_Constants
+com.foxconn.emm.utils.Traffic_Constants$subquery
+com.foxconn.emm.utils.VersionUtil:
+    14:14:public VersionUtil()
+com.foxconn.emm.xmpp.NotificationService:
+    public static final java.lang.String SERVICE_NAME
+com.foxconn.emm.xmpp.XmppManager:
+    private static final java.lang.String XMPP_RESOURCE_NAME
+    175:175:public java.lang.String getPassword()
+    218:218:public java.util.List getTaskList()
+    222:222:public java.util.concurrent.Future getFutureTask()
+    245:246:private java.lang.String newRandomUUID()
+com.foxconn.emm.xmpp.listener.NotificationPacketListener:
+    private static final java.lang.String DEFAULT_INTENT_SERVICE_CLASS_NAME
+    public static final java.lang.String FLAG_NOTIFICATION_PACKETNAME
+    public static final java.lang.String FLAG_NOTIFICATION_PACKETID
+    public static final java.lang.String FLAG_NOTIFICATION_ID
+    85:85:protected java.lang.String getEMMMIntentServiceClassName(android.content.Context)
+    93:95:static final java.lang.String getDefaultIntentServiceClassName(android.content.Context)
